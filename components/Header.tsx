@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Logo from '@/components/Logo.jpg';
 import Link from 'next/link';
 
-function Header() {
+function Header({ handleSignUpButtonClick, handleLogInButtonClick }) {
   return (
     <header className='flex items-start justify-between
     bg-gray-50 w-full'>
@@ -21,12 +21,12 @@ function Header() {
             </Link>
             {/* SignUp Button */}
             <Link href="/signup" passHref>
-                <button className='text-gray-600 hover:text-gray-900 bg-yellow-200 text-2xl rounded-full px-3 py-0.5'> 회원가입 </button>
+                <button className='text-gray-600 hover:text-gray-900 bg-yellow-200 text-2xl rounded-full px-3 py-0.5' onClick={handleSignUpButtonClick}> 회원가입 </button>
             </Link>
      
             {/* LogIn Button */}
             <Link href="/login" passHref>
-                <button className='text-gray-600 hover:text-gray-900 bg-yellow-400 text-2xl rounded-full px-3 py-0.5'> 로그인 </button>
+                <button className='text-gray-600 hover:text-gray-900 bg-yellow-400 text-2xl rounded-full px-3 py-0.5' onClick={handleLogInButtonClick}> 로그인 </button>
             </Link>
 
         </div>

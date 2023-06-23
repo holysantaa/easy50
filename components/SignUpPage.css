@@ -1,0 +1,38 @@
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+.signup > form > input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.signup > .logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+  
+.signup > .text-left {
+    position: relative;
+    left: 15%;
+}
+
+.signup > h3 {
+    text-align: center;
+}
